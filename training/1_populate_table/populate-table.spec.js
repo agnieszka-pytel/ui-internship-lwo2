@@ -22,8 +22,16 @@ const students = [
 ];
 
 xdescribe('populateTable', () => {
-  afterEach(() => {
-    document.body.innerHTML = '';
+  /* afterEach(() => {
+    document.body.innerHTML = ''; 
+
+  }); */
+
+  beforeAll(() => {
+    const dest = path.join(__dirname, './populate-table.html');
+    const html = fs.readFileSync(dest).toString();
+
+    document.body.innerHTML = html;
   });
 
   test('should create a table', () => {
@@ -53,6 +61,6 @@ xdescribe('populateTable', () => {
     expect($row1.children[2].innerHTML).toBe('age');
     expect($row2.children[1].innerHTML).toBe('Andrii');
     expect($row3.children[3].innerHTML).toBe('no');
-    expect(+$row4.children[0].innerHTML).toBe(3);
+    expect($row4.children[0].innerHTML).toBe(3);
   });
 });
