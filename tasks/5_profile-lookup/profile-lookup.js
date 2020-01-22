@@ -1,5 +1,5 @@
-function lookupProfile (firstName, prop) {
-    /// NO DATA FOR CONTACTS
+function lookupProfile(firstName, prop) {
+  // / NO DATA FOR CONTACTS
 }
 
-export { lookupProfile }
+export {lookupProfile};

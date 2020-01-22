@@ -1,5 +1,5 @@
-function isBoolean (data) {
-    return typeof(data) === "boolean";
+function isBoolean(data) {
+  return typeof(data) === 'boolean';
 }
 
-export { isBoolean }
+export {isBoolean};
