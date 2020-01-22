@@ -1,4 +1,4 @@
-import { populateTable } from './populate-table.js';
+// import { populateTable } from './populate-table.js';
 
 const students = [
   {
