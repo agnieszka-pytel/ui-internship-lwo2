@@ -1,5 +1,5 @@
-function getNumbers (str) {
-    return str.match(/\d/g).map(Number);
+function getNumbers(str) {
+  return str.match(/\d/g).map(Number);
 }
 
-export { getNumbers }
+export {getNumbers};
