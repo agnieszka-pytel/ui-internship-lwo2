@@ -9,24 +9,23 @@ const GOLF_SCORES = {
 };
 
 function golfScore(par, strokes) {
-  if (strokes == 1) {
+  if (strokes === 1) {
     return GOLF_SCORES.HOLE_IN_ONE;
-  } else {
-    let diff = strokes - par;
-    switch ( true ) {
-      case diff <= -2:
-        return GOLF_SCORES.EAGLE;
-      case diff == -1:
-        return GOLF_SCORES.BIRDIE;
-      case diff == 0:
-        return GOLF_SCORES.PAR;
-      case diff == 1:
-        return GOLF_SCORES.BOGEY;
-      case diff == 2:
-        return GOLF_SCORES.DOUBLE_BOGEY;
-      case diff >= 3:
-        return GOLF_SCORES.GO_HOME;
-    }
+  }
+  let diff = strokes - par;
+  switch ( true ) {
+    case diff <= -2:
+      return GOLF_SCORES.EAGLE;
+    case diff === -1:
+      return GOLF_SCORES.BIRDIE;
+    case diff === 0:
+      return GOLF_SCORES.PAR;
+    case diff === 1:
+      return GOLF_SCORES.BOGEY;
+    case diff === 2:
+      return GOLF_SCORES.DOUBLE_BOGEY;
+    case diff >= 3:
+      return GOLF_SCORES.GO_HOME;
   }
 }
 
