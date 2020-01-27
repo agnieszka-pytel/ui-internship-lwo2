@@ -1,5 +1,3 @@
-export function destroyer(arr) {
-  // eslint-disable-next-line prefer-rest-params
-  let toDestroy = Array.from(arguments);
+export function destroyer(arr, ...toDestroy) {
   return arr.filter((a) => !toDestroy.includes(a));
 }
