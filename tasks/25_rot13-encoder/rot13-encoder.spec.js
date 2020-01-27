@@ -1,6 +1,6 @@
-// import { rot13Encoder } from './rot13-encoder';
+import { rot13Encoder } from './rot13-encoder';
 
-xdescribe('rot13-encoder', () => {
+describe('rot13-encoder', () => {
     test('rot13Encoder("") should return a string', () => {
         expect(typeof rot13Encoder('')).toBe('string');
     });
@@ -13,7 +13,7 @@ xdescribe('rot13-encoder', () => {
         expect(rot13Encoder("LOVE?")).toBe('YBIR?');
     });
 
-    test('rot13Encoder("Hello World!") should encode to "Uryyb Jbeyq!"', () => {
-        expect(rot13Encoder("LOVE?")).toBe('YBIR?');
+    test('rot13Encoder("HELLO WORLD!") should encode to "URYYB JBEYQ!"', () => {
+        expect(rot13Encoder("HELLO WORLD!")).toBe("URYYB JBEYQ!");
     });
 });
