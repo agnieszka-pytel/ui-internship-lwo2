@@ -1,5 +1,5 @@
 function cloneArr(arr) {
-  return arr.map((a) => a);
+  return [...arr];
 }
 
 export {cloneArr};
