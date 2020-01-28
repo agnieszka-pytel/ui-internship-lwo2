@@ -1,9 +1,7 @@
 export class God {
   static create() {
     let humans = [];
-    let adam = new Man('Adam');
-    let eve = new Woman('Eve');
-    humans.push(adam, eve);
+    humans.push(new Man('Adam'), new Woman('Eve'));
     return humans;
   }
 }
