@@ -1,14 +1,13 @@
 export function humanizeFormat(num) {
   let lastDigit = num%10;
-  let regularEnding = [4, 5, 6, 7, 8, 9, 0];
-  switch (true) {
-    case lastDigit === 1:
+  switch (lastDigit) {
+    case 1:
       return num+'st';
-    case lastDigit === 2:
+    case 2:
       return num+'nd';
-    case lastDigit === 3:
+    case 3:
       return num+'rd';
-    case regularEnding.includes(lastDigit):
+    case 4: case 5: case 6: case 7: case 8: case 9: case 0:
       return num+'th';
     default:
       return '';
