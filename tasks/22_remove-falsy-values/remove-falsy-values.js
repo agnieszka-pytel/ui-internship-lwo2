@@ -1,3 +1,3 @@
-export function removeFalsyValues(arr) {
-  return arr.filter((a) => a);
+export function removeFalsyValues(array) {
+  return array.filter((element) => element);
 }
