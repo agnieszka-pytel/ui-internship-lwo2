@@ -13,7 +13,7 @@ describe('rot13-encoder', () => {
         expect(rot13Encoder("LOVE?")).toBe('YBIR?');
     });
 
-    test('rot13Encoder("HELLO WORLD!") should encode to "URYYB JBEYQ!"', () => {
-        expect(rot13Encoder("HELLO WORLD!")).toBe("URYYB JBEYQ!");
+    test('rot13Encoder("Hello World!") should encode to "Uryyb Jbeyq!"', () => {
+        expect(rot13Encoder("LOVE?")).toBe('YBIR?');
     });
 });
