@@ -1,6 +1,4 @@
-function arraySum(array) {
-  return array.reduce((sum, element) => sum + element, 0);
-}
+import { arraySum } from "../additional_functions/array_sum";
 
 export function arrayLeaders(array) {
   let zeroExpandedArray = [...array, 0];
