@@ -1,13 +1,15 @@
 export function sortByBits(array) {
   return array
-    .map((element) => element.toString(2))
+    .map(element => element.toString(2))
     .sort((a, b) => {
-      let bitsInA = a.split('').filter((element) => element === '1').length;
-      let bistinB = b.split('').filter((element) => element === '1').length;
-      if (bitsInA === bistinB) {
+      if (countBits(a) === countBits(b)) {
         return Number(a) - Number(b);
       }
-      return bitsInA - bistinB;
+      return countBits(a) - countBits(b);
     })
-    .map((element) => parseInt(element, 2));
+    .map(element => parseInt(element, 2));
+}
+
+function countBits(binaryNumber) {
+  return binaryNumber.split("").filter(element => element === "1").length;
 }
