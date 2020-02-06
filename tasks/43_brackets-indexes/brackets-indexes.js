@@ -1,6 +1,7 @@
 export function findCloseIndex(sentence, beginIndex) {
   let depth = 0;
   let endingIndex = beginIndex;
+
   for (let [index, element] of sentence
     .slice(beginIndex)
     .split("")

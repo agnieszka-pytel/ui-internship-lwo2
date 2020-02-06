@@ -5,6 +5,7 @@ function arraySum(array) {
 export function runningAverage() {
   let counter = 0;
   let numbers = [];
+
   return function countAverage(num) {
     counter++;
     numbers.push(num);

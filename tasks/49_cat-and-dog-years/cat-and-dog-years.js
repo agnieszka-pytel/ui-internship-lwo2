@@ -7,6 +7,7 @@ const animalYears = {
 
 function countYears(animal, humanYears) {
   let years = 0;
+
   while (humanYears) {
     switch (humanYears) {
       case 1:
@@ -20,6 +21,7 @@ function countYears(animal, humanYears) {
     }
     humanYears--;
   }
+
   return years;
 }
 
