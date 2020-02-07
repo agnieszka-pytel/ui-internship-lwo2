@@ -1,3 +1,3 @@
-export function uniteUnique() {
-  return [...new Set([...arguments].flat())];
+export function uniteUnique(...arrays) {
+  return [...new Set(arrays.flat())];
 }
