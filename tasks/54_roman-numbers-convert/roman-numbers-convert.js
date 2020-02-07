@@ -3,7 +3,7 @@ export function convertToRoman(number) {
 }
 
 function convertNumber(number, orderOfMagnitude = 0) {
-  let multiplier = 10 ** orderOfMagnitude;
+  let multiplier = Math.pow(10, orderOfMagnitude);
   let currentOrderNumber = Math.floor(number / multiplier);
   let rest =
     orderOfMagnitude > 0
